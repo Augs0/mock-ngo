@@ -1,0 +1,73 @@
+:root {
+  --primary: #eb7099;
+  --secondary: #201b74;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Rowdies&display=swap');
+
+body,
+p,
+a,
+ul,
+li {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: ghostwhite;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  background-color: var(--secondary);
+  overflow-x: hidden;
+  color: ghostwhite;
+}
+
+.button {
+  background: none;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  padding: 6px 12px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.button:hover {
+  cursor: pointer;
+  background: var(--primary);
+  color: #333;
+}
+
+input,
+textarea {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 10px 16px;
+  border: 2px solid #239649;
+  border-radius: 20-x;
+  -webkit-border-radius: 20-x;
+  -moz-border-radius: 20-x;
+  -ms-border-radius: 20-x;
+  -o-border-radius: 20-x;
+  color: ghostwhite;
+}
+
+/* Media queries */
+@media screen and (min-width: 620px) {
+}
+
+@media screen and (min-width: 960px) {
+}
+
+@media screen and (min-width: 1200px) {
+}
