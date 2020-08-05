@@ -2,7 +2,16 @@
   --primary: #eb7099;
   --secondary: #201b74;
 }
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Rowdies&display=swap');
+
+@font-face {
+  font-family: 'Rowdies Regular';
+  src: url('assets/fonts/Rowdies-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url('assets/fonts/Montserrat-Regular.ttf');
+}
 
 body,
 p,
@@ -12,10 +21,42 @@ li {
   text-decoration: none;
   padding: 0;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat Regular';
 }
 
-a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary);
+  font-family: 'Rowdies Regular';
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.1em;
+}
+
+.leading {
+  font-size: 1.1em;
+}
+
+p,
+a,
+li {
   color: ghostwhite;
 }
 
@@ -53,13 +94,60 @@ input,
 textarea {
   background-color: rgba(255, 255, 255, 0.05);
   padding: 10px 16px;
-  border: 2px solid #239649;
-  border-radius: 20-x;
-  -webkit-border-radius: 20-x;
-  -moz-border-radius: 20-x;
-  -ms-border-radius: 20-x;
-  -o-border-radius: 20-x;
+  border: 2px solid var(--primary);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
   color: ghostwhite;
+}
+
+.supporters img {
+  max-width: 100%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.feature {
+  max-width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.site-nav {
+  margin: 0 1em;
+}
+
+.site-nav ul {
+  grid-column: 1/6;
+  border-bottom: 2px dashed var(--primary);
+}
+
+.welcome {
+  padding: 0em 1em 1em 1em;
+}
+
+.welcome-text {
+  grid-column: 1/6;
+}
+
+.welcome-text a {
+  margin-top: 20px;
+}
+
+.welcome-img {
+  grid-column: 6/8;
+}
+
+.welcome-img img {
+  width: 150%;
 }
 
 /* Media queries */
@@ -67,7 +155,13 @@ textarea {
 }
 
 @media screen and (min-width: 960px) {
+  body {
+    font-size: 18px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
 }
