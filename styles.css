@@ -172,6 +172,26 @@ header span {
   width: 10px;
 }
 
+.about,
+.helping {
+  padding: 1em 1em 8em 1em;
+  background: linear-gradient(var(--secondary) 60%, var(--primary));
+}
+
+.about-text *,
+.help-text * {
+  grid-column: 1/9;
+  text-align: center;
+}
+
+.help-text button {
+  margin: 1em;
+}
+
+.ways li {
+  margin: 1em;
+}
+
 .achievements,
 .partners,
 .contact {
@@ -242,10 +262,10 @@ header span {
 .feature {
   max-width: 100%;
   border-radius: 0;
-  -webkit-border-radius: ;
-  -moz-border-radius: ;
-  -ms-border-radius: ;
-  -o-border-radius: ;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
   filter: grayscale(50%);
   -webkit-filter: grayscale(50%);
 }
@@ -287,6 +307,10 @@ footer .social {
 footer .social i {
   font-size: 1.5em;
   margin: 0.4em;
+}
+
+footer .social a {
+  margin: 0.5em;
 }
 
 /* Media queries */
@@ -352,6 +376,10 @@ footer .social i {
     align-self: center;
   }
 
+  .achievements-content a * {
+    display: flex;
+  }
+
   .supporters a * {
     max-width: 80%;
   }
@@ -364,7 +392,8 @@ footer .social i {
   .welcome,
   .achievements,
   .partners,
-  .contact {
+  .contact,
+  .about {
     padding: 3em 1em;
   }
 
@@ -416,10 +445,6 @@ footer .social i {
 
   footer {
     padding: 3em 1em;
-  }
-
-  footer .social {
-    margin-top: -3em;
   }
 
   footer .social i {
